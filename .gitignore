@@ -1,0 +1,53 @@
+# ==========================================
+# Terraform (Arquivos locais, estados e segredos)
+# ==========================================
+**/.terraform/*
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+crash.log
+crash.*.log
+
+# ==========================================
+# Ansible (Logs, senhas de vault e retry)
+# ==========================================
+*.retry
+.vault_pass
+.vault_password*
+ansible.log
+
+# ==========================================
+# Chaves e Certificados SSH / SSL
+# ==========================================
+*.pem
+*.key
+*.pub
+*.id_rsa
+*.id_ed25519
+*.pfx
+*.p12
+
+# ==========================================
+# Ambientes e Credenciais Locais
+# ==========================================
+.env
+.env.*
+*.azure/
+*credentials.json
+*creds.json
+
+# ==========================================
+# Sistema Operacional e IDEs
+# ==========================================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
